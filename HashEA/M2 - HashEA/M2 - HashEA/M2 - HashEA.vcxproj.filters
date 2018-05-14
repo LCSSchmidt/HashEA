@@ -27,6 +27,12 @@
     <ClInclude Include="HashEA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Gravar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HashE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
