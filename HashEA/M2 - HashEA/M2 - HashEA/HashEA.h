@@ -41,7 +41,7 @@ int hashGeracaoChave(int max) {
 }
 
 template <typename T, int max>
-void hashInsercao(HashEA<T, max> &hash, T dado, int chave = 0) {
+void hashInsercao(HashEA<T, max> &hash, T dado, int &numeroDeInstrucoes, int chave = 0) {
 	if(chave == 0)
 		chave = hashGeracaoChave(max);
 
@@ -50,16 +50,16 @@ void hashInsercao(HashEA<T, max> &hash, T dado, int chave = 0) {
 	else if (chave == 999)
 		return;
 	else
-		hashInsercao(hash, dado, ++chave);
+		hashInsercao(hash, dado, ++numeroDeInstrucoes, ++chave);
 }
 
 template <typename T, int max>
-T hashBusca(HashEA<T, max> &hash , int chave = 0) {
+T hashBusca(HashEA<T, max> &hash, int &numeroDeInstrucoes, int chave = 0) {
 	if (chave == 0)
 		chave = hashGeracaoChave(max);
 
 	if (hash.dado[chave].dado != NULL)
 		return hash.dado[chave].dado;
 	else 
-		hashBusca(hash, ++chave);
+		hashBusca(hash, ++numeroDeInstrucoes, ++chave);
 }

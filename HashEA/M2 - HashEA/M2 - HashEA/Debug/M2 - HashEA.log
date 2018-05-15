@@ -1,4 +1,3 @@
 ﻿  M2 - HashEA.cpp
-c:\users\stit_\source\repos\hashea\m2 - hashea\m2 - hashea\hashea.h(65): warning C4715: 'hashBusca<int,1000>': not all control paths return a value
   M2 - HashEA.vcxproj -> C:\Users\stit_\Source\Repos\HashEA\M2 - HashEA\Debug\M2 - HashEA.exe
   M2 - HashEA.vcxproj -> C:\Users\stit_\Source\Repos\HashEA\M2 - HashEA\Debug\M2 - HashEA.pdb (Full PDB)
